@@ -1,0 +1,18 @@
+<div class="main">
+  <h1>Welcome to Alejandro's CV</h1>
+  <form (submit)="solve($event)">
+    <label for="usr">Username:</label>
+    <input type="text" id="usr" name="usr" placeholder="Enter your Username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+    <button type="submit">Submit</button>
+  </form>
+  @if(loginResult != ''){
+    <label id="loginResult">{{loginResult}}</label>
+  }
+</div>
+
+
+

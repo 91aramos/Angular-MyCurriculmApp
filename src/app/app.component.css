@@ -1,0 +1,34 @@
+/* Estilo para el header */
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Estilo para el body (router-outlet) */
+body {
+  display : flex;
+  font-family: sans-serif;
+  align-items: center;
+  line-height: 1.5;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 35px;
+  padding-top: 25px;
+
+}
+
+/* Estilo para el footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
