@@ -1,3 +1,4 @@
+import { AboutComponent } from '../components/about/about.component';
 import { HeaderComponent } from './../components/shared/header/header.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -8,7 +9,7 @@ import { SectionMainComponent } from '../components/section-main/section-main.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LoginComponent, HeaderComponent, FooterComponent, SectionMainComponent, RouterOutlet],
+  imports: [LoginComponent,AboutComponent, HeaderComponent, FooterComponent, SectionMainComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

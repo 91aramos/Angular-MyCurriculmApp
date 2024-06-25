@@ -1,11 +1,18 @@
 /* Estilo para el header */
-.app-header {
+header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   text-align: left;
-  padding: 10px;
+  padding: 0px;
+  background-color: #f8f9fa; /* Cambia el color según tu preferencia */
+}
+
+/* Asegurarse de que <app-header> también ocupe el 100% del ancho */
+app-header {
+  width: 100%;
+  display: block; /* Asegura que se comporte como un bloque */
 }
 
 /* Estilo para el body (router-outlet) */

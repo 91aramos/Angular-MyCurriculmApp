@@ -1,0 +1,11 @@
+.contact-info {
+  margin: 0; /* remove default margin bottom from h1 */
+}
+
+.contact-info h1 {
+  margin: 0; /* adjust margin bottom to your liking */
+}
+
+.contact-info li {
+  margin-top: 0; /* remove default margin top from li */
+}

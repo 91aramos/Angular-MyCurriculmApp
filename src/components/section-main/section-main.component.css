@@ -1,10 +1,46 @@
-
-.company {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: left;
+  padding: 0px;
+  background-color: #f8f9fa; /* Cambia el color según tu preferencia */
 }
 
-.dates {
-  text-align: right;
-  float: right; 
+/* Asegurarse de que <app-header> también ocupe el 100% del ancho */
+app-header {
+  width: 100%;
+  display: block; /* Asegura que se comporte como un bloque */
 }
+
+/* Estilo para el body (router-outlet) */
+body {
+  display : flex;
+  font-family: sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  width: 98vw;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-inline-start: 15px;
+}
+
+
+
+/* Estilo para el footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(250, 247, 247);
+}
+
+
 

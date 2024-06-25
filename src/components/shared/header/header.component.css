@@ -1,3 +1,28 @@
-p {
-  color: white;
+/* Estilos para la barra de navegación principal */
+.main-nav {
+  background: #f4f4f4;
+  padding-top: 23px;
+  display: flex; /* Agrega esta línea para convertir el listado en un menú horizontal */
+}
+
+.main-nav nav ul {
+  list-style: none; /* Quita los puntos de la lista vertical */
+  display: flex; /* Alinea los elementos del menú horizontalmente */
+}
+
+.main-nav nav ul li {
+  margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+.main-nav nav ul li a {
+  color: #a7a7a7;
+  text-decoration: none; /* Quita la decoración de enlace */
+  font-weight: bold; /* Opcional: Puedes ajustar el peso de la fuente */
+}
+
+.main-nav nav ul li.active a {
+  color: #4d4d4d;
+}
+.navbar.item-nav ul li.active a {
+  font-weight: bold; /* Marcar en negrita */
 }

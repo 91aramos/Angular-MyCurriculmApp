@@ -1,3 +1,18 @@
-@if (user) {
-  <p>Welcome {{user}}</p>
-}
+  <div class="main-nav">
+    <div class="container">
+      <header class="group top-nav">
+        <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+            <span class="logo">Welcome {{user}}</span>
+        </div>
+        <nav id="navbar-1" class="navbar item-nav">
+          <ul>
+            <li [class.active]="selectedMenu === 'about'"><a (click)="navigateTo('about')">About</a></li>
+            <li [class.active]="selectedMenu === 'experiences'"><a (click)="navigateTo('experiences')">Experiences</a></li>
+            <li [class.active]="selectedMenu === 'courses'"><a (click)="navigateTo('courses')">Courses</a></li>
+            <li [class.active]="selectedMenu === 'skills'"><a (click)="navigateTo('skills')">Skills</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+

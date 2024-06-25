@@ -1,5 +1,4 @@
-import { LoginService } from './../../../services/login.service';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 @Component({
@@ -10,12 +9,15 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  user: any = '';
+  @Input() user: string = '';
+  @Output() navigateEvent = new EventEmitter<string>();
 
-  constructor(private loginService: LoginService){
-    
-    this.loginService.userName$.subscribe((username) => {
-      this.user = username;
-    });
-   }
+  selectedMenu: string = '';
+
+  constructor(){}
+
+  navigateTo(route: string) {
+    this.selectedMenu = route;
+    this.navigateEvent.emit(route);
+  }
 }

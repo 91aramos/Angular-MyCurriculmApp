@@ -6,16 +6,18 @@ import { Subject } from 'rxjs';
 })
 export class LoginService {
 
-  private userNameSubject= new Subject<string>();
-  userName$ = this.userNameSubject.asObservable();
 
-  login(username: string, password: string) {
+  private username : string = '';
+
+  login(username: string, password: string):boolean{
     if (password == 'admin') {
-      this.userNameSubject.next(username);
+      this.username=username;
       return true; // Return true after successful login
     } else {
       return false; // Return false if login fails
     }
   }
-
+  getUsername(): string {
+    return this.username;
+  }
 }

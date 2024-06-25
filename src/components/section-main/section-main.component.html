@@ -1,12 +1,16 @@
-@for (section of cvSections; track section.id){
-      <h1>
-        <span class="company">{{ section.company }}</span><span class="dates">{{ section.dates }}</span>
-      </h1>
-      <span class="description">{{ section.description }}</span>
-      <li>Responsabilities: </li>
-      <span class="responsabilities">{{ section.responsabilities }}</span>
-      <li>Technologies:</li>
-      <span class="tecnologies">{{ section.technologies }}</span>
-}
+<html>
+  <header>
+    <app-header [user]="user" (navigateEvent)="onNavigate($event)"/>
+  </header>
+  <body>
+    <router-outlet></router-outlet>
+  </body>
+  <footer>
+    <app-footer />
+  </footer>
+</html>
+
+
+<!-- -->
 
 
