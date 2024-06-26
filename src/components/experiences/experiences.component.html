@@ -1,12 +1,17 @@
 <body>
-  @for (section of cvSections; track section.id){
+  <div *ngFor="let section of cvSections; let i = index">
     <h1>
       <span class="company">{{ section.company }}</span><span class="dates">{{ section.dates }}</span>
     </h1>
     <span class="description">{{ section.description }}</span>
     <li>Responsabilities: </li>
-    <span class="responsabilities">{{ section.responsabilities }}</span>
+    <div *ngFor="let resp of section.listResponsabilities; let j = index">
+      <li class = "responsability">{{resp.text}}</li>
+    </div>
     <li>Technologies:</li>
-    <span class="tecnologies">{{ section.technologies }}</span>
-}
+    <div *ngFor="let tech of section.listTechnologies; let k = index">
+      <li class = "technologies">{{tech.text}}</li>
+    </div>
+  </div>
+
 </body>
